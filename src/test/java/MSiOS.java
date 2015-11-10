@@ -16,11 +16,18 @@ import org.testng.annotations.Test;
 
 
 
+
 public class MSiOS extends basicTest{
 
 
+	@Test () 
+	public void checkAccount() {
+		Assert.assertTrue(true, "Invalid account");
+	
+	}
+
 	@Test (dataProvider="PerfectoParams") 
-	public void test1(PerfectoTestParams params) {
+	public void LogIn(PerfectoTestParams params) {
 		System.out.println("Test1 in Test"+params._platform);
 		System.out.println("Test1 in Test"+params._repKey);
 		String devID = params._device._id;
