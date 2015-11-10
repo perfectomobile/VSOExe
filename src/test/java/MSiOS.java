@@ -19,9 +19,14 @@ import org.testng.annotations.Test;
 
 public class MSiOS extends basicTest{
 
-
-	@Test () 
+	@Test  
 	public void checkAccount() {
+		Assert.assertTrue(false, "login ended");
+	
+	}
+
+	@Test  
+	public void checkAccountData() {
 		Assert.assertTrue(true, "Invalid account");
 	
 	}
