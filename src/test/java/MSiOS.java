@@ -29,7 +29,7 @@ public class MSiOS extends basicTest{
 	public void checkUserHealthInsurence(PerfectoTestParams params) {
 		Assert.assertTrue(true, "checkUser Health Insurence");
 	
-	
+	}
 	@Test (dataProvider="PerfectoParams") 
 	public void checkAppointment(PerfectoTestParams params) {
 		boolean b = Math.random() < 0.5;
