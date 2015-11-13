@@ -24,6 +24,14 @@ public class MSiOS extends basicTest{
 		Assert.assertTrue(false, "login ended");
 	
 	}
+	
+	@Test (dataProvider="PerfectoParams") 
+	public void checkAppointment(PerfectoTestParams params) {
+		boolean b = Math.random() < 0.5;
+		Assert.assertTrue(b, "checkAppointmentd");
+
+	 
+	} 
 
 	@Test (dataProvider="PerfectoParams") 
 	public void checkAccountData(PerfectoTestParams params) {
