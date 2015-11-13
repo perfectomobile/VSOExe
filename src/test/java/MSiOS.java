@@ -20,13 +20,13 @@ import org.testng.annotations.Test;
 public class MSiOS extends basicTest{
 
 	@Test  (dataProvider="PerfectoParams") 
-	public void checkAccount(dataProvider="PerfectoParams") {
+	public void checkAccount(PerfectoTestParams params) {
 		Assert.assertTrue(false, "login ended");
 	
 	}
 
 	@Test (dataProvider="PerfectoParams") 
-	public void checkAccountData(dataProvider="PerfectoParams") {
+	public void checkAccountData(PerfectoTestParams params) {
 		Assert.assertTrue(true, "Invalid account");
 	
 	}
