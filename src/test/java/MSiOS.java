@@ -20,24 +20,25 @@ import org.testng.annotations.Test;
 public class MSiOS extends basicTest{
 
 	@Test  (dataProvider="PerfectoParams") 
-	public void checkAccount(PerfectoTestParams params) {
-		Assert.assertTrue(false, "login ended");
+	public void checkUserBloodGroup(PerfectoTestParams params) {
+		Assert.assertTrue(false, "checkUserBloodGroup");
 	
 	}
+
+	@Test (dataProvider="PerfectoParams") 
+	public void checkUserHealthInsurence(PerfectoTestParams params) {
+		Assert.assertTrue(true, "checkUser Health Insurence");
+	
 	
 	@Test (dataProvider="PerfectoParams") 
 	public void checkAppointment(PerfectoTestParams params) {
 		boolean b = Math.random() < 0.5;
-		Assert.assertTrue(b, "checkAppointmentd");
+		Assert.assertTrue(b, "check Appointmentd");
 
 	 
 	} 
 
-	@Test (dataProvider="PerfectoParams") 
-	public void checkAccountData(PerfectoTestParams params) {
-		Assert.assertTrue(true, "Invalid account");
-	
-	}
+ 
 
 	@Test (dataProvider="PerfectoParams") 
 	public void LogIn(PerfectoTestParams params) {
