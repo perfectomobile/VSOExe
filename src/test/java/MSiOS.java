@@ -32,7 +32,7 @@ public class MSiOS extends basicTest{
 	}
 	@Test (dataProvider="PerfectoParams") 
 	public void checkAppointment(PerfectoTestParams params) {
-		boolean b = Math.random() < 0.5;
+		boolean b = Math.random() < 0.3;
 		Assert.assertTrue(b, "check Appointmentd");
 
 	 
