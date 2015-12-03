@@ -6,7 +6,7 @@ public class PerfectoTestParams {
 	device _device;
 	String _platform;
 	String _activityBandle;
-	String _cloud = "https://microsoft.perfectomobile.com";
+	String _cloud = "https://demo.perfectomobile.com";
 	String _user = "uzie@perfectomobile.com";
 	String _password = "Perfecto1";
 
