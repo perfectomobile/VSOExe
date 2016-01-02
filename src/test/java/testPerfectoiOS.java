@@ -20,6 +20,14 @@ public class testPerfectoiOS extends basicTest{
 
 
 	@Test (dataProvider="PerfectoParams") 
+	public void checkAppointment(PerfectoTestParams params) {
+		boolean b = Math.random() < 0.3;
+		Assert.assertTrue(b, "check Appointmentd");
+
+	 
+	} 
+	
+	@Test (dataProvider="PerfectoParams") 
 	public void SPG(PerfectoTestParams params) {
 		System.out.println("Test1 in Test"+params._platform);
 		System.out.println("Test1 in Test"+params._repKey);
