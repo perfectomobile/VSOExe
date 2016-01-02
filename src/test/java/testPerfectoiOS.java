@@ -28,7 +28,7 @@ public class testPerfectoiOS extends basicTest{
 	} 
 	
 	@Test (dataProvider="PerfectoParams") 
-	public void SPG(PerfectoTestParams params) {
+	public void CheckLogin(PerfectoTestParams params) {
 		System.out.println("Test1 in Test"+params._platform);
 		System.out.println("Test1 in Test"+params._repKey);
 
